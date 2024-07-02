@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>
+			Conversao de arquivos HEIC
+		</title>
+
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<link href="./assets/style.min.css" rel="stylesheet" />
+		<style>
+			#demo-sample-files img {
+				height: 44px;
+				margin-left: 1px;
+				margin-top: 1px;
+			}
+			#error-on-try {
+				font-size: 13px;
+				background: #ffebee;
+				padding: 5px;
+				border: 1px solid red;
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+
+		<div class="bs-docs-masthead" id="content" style="background: linear-gradient(135deg, #673ab7, #3f51b5);">
+			<div class="container">
+				<h1 class="home-title">Conversão de arquivos .heic</h1>
+			</div>
+		</div>
+
+		
+
+		<div class="container bs-docs-container">
+			<div class="row">
+				<div class="col-md-12" role="main">
+					
+					<section class="bs-docs-section">
+						<div id="demo-content">
+							<div>
+								
+                                
+                                <p>A extensão <strong>.heic</strong> foi lançado pela Apple em 2017 junto com o iOS 11.<br>
+Esse tipo de arquivo ainda não é compatível com todas as plataformas. <br>
+Por isso, para mantermos a máxima compatibilidade do nosso site, criamos abaixo uma ferramenta para converter esses arquivos.</p>
+                                <p>&nbsp;</p>
+                                <p>Siga o passo a passo abaixo:</p>
+                                <p>
+                                <ol>
+                                	<li>Clique no botao "<strong>Escolher Arquivo</strong>" e selecione o arquivo dentro do seu computador;</li>
+                                    <li>Assim que escolher o arquivo dentro do seu computador, o sistema fará a conversão e o download <strong>automatico</strong> do arquivo convertido</li>
+                                </ol>
+                                </p>
+                                <p>&nbsp;</p>
+								<input type="file" id="user-file" />
+								<p>
+									<i style="font-size: 13px;">
+										O resultado será convertido para <code>jpeg</code> e baixado para o seu dispositivo assim que a conversão for concluída.
+									</i>
+								</p>
+								<p>
+									<i
+										style="font-size: 13px;"
+										id="error-on-try"
+									></i>
+								</p>
+							</div>
+						</div>
+					</section>
+					
+				</div>
+				
+			</div>
+		</div>
+
+		
+		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.3.0/bootbox.min.js"></script>
+		<script
+			src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"
+			type="text/javascript"
+		></script>
+		<script type="text/javascript">
+			hljs.initHighlightingOnLoad();
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+		<script src="https://raw.githack.com/jmalarcon/ie-web-worker/master/worker.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.4/bluebird.min.js"></script>
+		<script src="./assets/script.js" type="text/javascript"></script>
+		<script src="./dist/heic2any.js" type="text/javascript"></script>
+
+		<script src="./assets/demo-user-file.js"></script>
+		<script src="./assets/demo-sample-files.js"></script>
+		<script type="text/javascript" src="./assets/load-md.js"></script>
+	</body>
+</html>
