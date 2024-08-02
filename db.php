@@ -1,14 +1,9 @@
 <?php
-/*
-$hostname="localhost";
-$username="Ad_765_imoveis";
-$password="00fQ4u9r@";
-$dbname="imoveis_ad";
-*/
-$hostname="localhost";
-$username="ad180740_imoveis_ad";
-$password="ShTX2XwCbFT6PMKyaMvD";
-$dbname="ad180740_imoveis_ad";
+
+$hostname="";
+$username="";
+$password="";
+$dbname="";
 $conn = mysqli_connect($hostname,$username, $password, $dbname);
 if (!$conn){
         die("Conexao ao banco de dados falhou: ".mysqli_connect_error());
