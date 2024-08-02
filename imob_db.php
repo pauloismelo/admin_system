@@ -1,5 +1,4 @@
-<!--#include file="inc_upload.asp"-->
-<!--#include file="db.asp"-->
+
 <?php
 
 include('verifica.php');
